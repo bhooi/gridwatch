@@ -1,0 +1,45 @@
+GridWatch: Sensor Placement and Anomaly Detection in the Electrical Grid
+Authors: Bryan Hooi, Dhivya Eswaran, Hyun Ah Song, Amritanshu Pandey, Marko Jereminov, Larry Pileggi, and Christos Faloutsos
+
+This software is licensed under Apache License, Version 2.0 (the  "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Version: 1.0
+Date: Apr 12, 2018
+Main Contact: Bryan Hooi (bhooi@andrew.cmu.edu)
+
+
+GridWatch contains algorithms for detecting anomalies and 
+selecting sensor locations in power grid data. 
+
+============ RUNNING GRIDWATCH ON A TEST EXAMPLE ============
+
+The simplest way to run GridWatch is to the Matlab script main_example.m. 
+
+The above command runs the sensor selection step on an example dataset 
+(the IEEE 118-node graph), and then performs anomaly detection using the 
+resulting set of sensors. 
+
+The IEEE 118-node graph, as well as all the graphs used in the paper, can 
+be found packaged together with Matpower 6.0, which can be downloaded from
+http://www.pserc.cornell.edu/matpower/. 
+
+============ FUNCTIONS IN GRIDWATCH ============
+
+As illustrated in main_example.m, the two usable functions in GridWatch are:
+
+* selection_greedy: this runs the GridWatch-S sensor selection step. 
+
+* detectanom_gridwatch: this runs the GridWatch-D anomaly detection algorithm.
+
+For details of the input and output parameters of each, see the comments in
+the respective files, or see main_example.m for an example of using them.
