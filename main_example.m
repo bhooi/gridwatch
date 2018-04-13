@@ -1,4 +1,3 @@
-clearvars;
 % File storing graph information (M). M is in Matpower format. 
 load('data/example_graph.mat', 'M'); 
 
