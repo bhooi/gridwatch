@@ -29,9 +29,17 @@ The above command runs the sensor selection step on an example dataset
 (the IEEE 118-node graph), and then performs anomaly detection using the 
 resulting set of sensors. 
 
+============ ACCESSING DATASETS ============
+
 The IEEE 118-node graph, as well as all the graphs used in the paper, can 
 be found packaged together with Matpower 6.0, which can be downloaded from
-http://www.pserc.cornell.edu/matpower/. 
+http://www.pserc.cornell.edu/matpower/. Note that Matpower also allows for 
+simulating voltage values for a given test case using the runpf function. 
+
+The sequence of load values obtained from the CMU campus for 20 days can be 
+found in the data/ folder of this package as well: it is a (num_ticks x 2) 
+matrix, where the rows correspond to (hourly) time ticks and the columns
+correspond to real and reactive power loads respectively. 
 
 ============ FUNCTIONS IN GRIDWATCH ============
 
